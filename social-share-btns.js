@@ -10,6 +10,22 @@ document.querySelector('[shareAttr="linkedin"]').href = "https://www.linkedin.co
 
 document.querySelector('[shareAttr="email"]').href = "mailto:?subject=Check out this article from TheaWellbeing&body=Check out this article: " + path;
 
+
+
+document.getElementById("copy-btn").onclick = function() {myFunction()};
+
+function myFunction() {
+  navigator.clipboard.writeText(window.location.href + "?utm_source=website&utm_medium=blog");
+  document.getElementById("copy-btn-text").innerHTML = "Link copied! 🥳";
+  
+  setTimeout(function(){
+		document.getElementById("copy-btn-text").innerHTML = "Copy link";
+	}, 5000); 
+}
+
+
+//Extra
+
 /*
 document.getElementById("f-btn").href =
 "https://www.facebook.com/sharer/sharer.php?u=https%3A//" + window.location.hostname + window.location.pathname;
@@ -23,16 +39,5 @@ document.getElementById("li-btn").href =
 document.getElementById("email-btn").href = 
 "mailto:?subject=Check out this article from TheaWellbeing&body=Check out this article: "+ window.location.hostname + window.location.pathname;
 */
-
-document.getElementById("copy-btn").onclick = function() {myFunction()};
-
-function myFunction() {
-  navigator.clipboard.writeText(window.location.href + "?utm_source=website&utm_medium=blog");
-  document.getElementById("copy-btn-text").innerHTML = "Link copied! 🥳";
-  
-  setTimeout(function(){
-		document.getElementById("copy-btn-text").innerHTML = "Copy link";
-	}, 5000); 
-}
 
 
