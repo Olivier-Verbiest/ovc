@@ -16,7 +16,7 @@ document.getElementById("copy-btn").onclick = function() {myFunction()};
 
 function myFunction() {
   navigator.clipboard.writeText(window.location.href + "?utm_source=website&utm_medium=blog");
-  document.getElementById("copy-btn-text").innerHTML = "Link copied! 🥳";
+  document.getElementById("copy-btn-text").innerHTML = "Link copied! 🥳 :)";
   
   setTimeout(function(){
 		document.getElementById("copy-btn-text").innerHTML = "Copy link";
