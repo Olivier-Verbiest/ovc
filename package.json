@@ -1,6 +1,9 @@
 {
   "name": "test-project",
   "version": "1.0.0",
-  "description": "A Vue.js project",
-  "main": "src/share-buttons.js",  
+  "description": "A test project",
+  "main": "social-share-btns.js",
+  "keywords": [],
+  "author": "Olivier Verbiest",
+  "license": "MIT",
 }
