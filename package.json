@@ -2,7 +2,7 @@
   "name": "test-project",
   "version": "1.0.0",
   "description": "A test project",
-  "main": "social-share-btns.js",
+  "main": "src/social-share-btns.js",
   "keywords": [],
   "author": "Olivier Verbiest",
   "license": "MIT",
